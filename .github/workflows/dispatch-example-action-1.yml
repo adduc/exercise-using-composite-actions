@@ -1,0 +1,17 @@
+name: (Dispatch) Example Action 1
+
+on:
+  workflow_dispatch:
+    inputs:
+      input_1:
+        description: input 1 description
+        type: string
+      input_2:
+        description: input 2 description
+        type: string
+
+jobs:
+  example-action-1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: adduc/exercise-defining-composite-actions/example-action-1@main
